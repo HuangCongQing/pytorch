@@ -9,6 +9,16 @@ PyTorch本质上是Numpy的替代者，而且支持GPU、带有高级功能，�
 跟着莫凡学习吧, [PyTorch 的教程](https://morvanzhou.github.io/tutorials/machine-learning/torch/)
 
 
+### Plus
+
+本人电脑设置安装python模块
+默认会安装到
+如果是python2(python2.exe)
+python2 -m pip install 库名
+
+如果是python3（python3.exe）
+python -m pip install 库名
+
 ### Issues
 
 
