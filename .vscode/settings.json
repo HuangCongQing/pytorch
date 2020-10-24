@@ -1,4 +1,19 @@
 {
     "python.linting.pylintEnabled": false,
-    "python.pythonPath": "C:\\Users\\hasee\\AppData\\Local\\Programs\\Python\\Python35\\python.exe"
+    "python.pythonPath": "C:\\Users\\hasee\\AppData\\Local\\Programs\\Python\\Python35\\python.exe",
+    "fileheader.customMade": {
+        "Description": "",
+        "Author": "HCQ",
+        "Company(School)": "UCAS",
+        "Email": "1756260160@qq.com",
+        "Date": "Do not edit",
+        "LastEditTime": "Do not edit",
+        "FilePath": "Do not edit"
+    },
+    "fileheader.cursorMode": {
+        "description": "",
+        "event": "",
+        "param": "",
+        "return": ""
+    },
 }

@@ -1,10 +1,12 @@
+'''
+Description: 
+Author: HCQ
+Company(School): UCAS
+Email: 1756260160@qq.com
+Date: 2020-10-20 20:50:01
+LastEditTime: 2020-10-24 15:53:42
+FilePath: /pytorch/01_torch_numpy.py
+'''
+
 import torch
-import numpy as np
-
-np_data = np.arange(6).reshape((2,3))
-# torch_data = torch.from_numpy(np_data)
-
-print(
-    '\nnumpy', np_data
-    # '\ntorch', torch_data
-)
+print(torch.__version__)
