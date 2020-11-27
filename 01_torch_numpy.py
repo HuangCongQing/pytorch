@@ -9,4 +9,4 @@ FilePath: /pytorch/01_torch_numpy.py
 '''
 
 import torch
-print(torch.__version__)
+print(torch.__version__) # 1.14
