@@ -6,7 +6,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-05 16:53:13
-LastEditTime: 2020-12-05 17:08:49
+LastEditTime: 2020-12-05 17:12:56
 FilePath: /pytorch/PyTorch深度学习实践/06逻辑回归.py
 '''
 
@@ -51,3 +51,23 @@ print('b = ', model.linear.bias.item())
 x_test = torch.Tensor([[4.0]])
 y_test = model(x_test)
 print('y_pred = ', y_test.data)
+
+
+
+# 可视化
+
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0, 10, 200)
+x_t = torch.Tensor(x).view((200, 1))
+y_t = model(x_t)  # 使用训练好的模型
+y = y_t.data.numpy()
+plt.plot(x, y)
+plt.plot([0, 10], [0.5, 0.5], c='r')
+plt.xlabel('Hours')
+plt.ylabel('Probability of Pass')
+plt.grid()
+plt.show()
+
+
+
