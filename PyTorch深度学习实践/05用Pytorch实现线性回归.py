@@ -1,10 +1,12 @@
 '''
 Description: 用Pytorch实现线性回归
+https://blog.csdn.net/bit452/article/details/109677086
+https://blog.csdn.net/weixin_44841652/article/details/105068509
 Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-05 12:20:13
-LastEditTime: 2020-12-05 13:27:14
+LastEditTime: 2020-12-05 16:54:16
 FilePath: /pytorch/PyTorch深度学习实践/05用Pytorch实现线性回归.py
 '''
 
