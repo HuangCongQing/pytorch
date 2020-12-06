@@ -4,7 +4,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-06 17:24:26
-LastEditTime: 2020-12-06 18:36:42
+LastEditTime: 2020-12-06 20:02:44
 FilePath: /pytorch/PyTorch深度学习实践/08加载数据集.py
 '''
 
@@ -35,7 +35,7 @@ class DiabetesDataset(Dataset):
         return self.len # 返回样本数
         
 #定义好DiabetesDataset后我们就可以实例化他了
-dataset = DiabetesDataset('./data/Diabetes_class.csv.gz')
+dataset = DiabetesDataset('./data/diabetes.csv.gz')
 #我们用DataLoader为数据进行分组，batch_size是一个组中有多少个样本，shuffle表示要不要对样本进行随机排列
 #一般来说，训练集我们随机排列，测试集不。num_workers表示我们可以用多少进程并行的运算
 train_loader = DataLoader(dataset=dataset,batch_size=32,shuffle=True,num_workers=2)
@@ -62,7 +62,7 @@ criterion = torch.nn.BCELoss(size_average=False)
 optimizer = torch.optim.SGD(model.parameters(),lr=0.1)#lr为学习率
 
 if __name__=='__main__':#if这条语句在windows系统下一定要加，否则会报错
-    for epoch in range(1000):
+    for epoch in range(1000):  # 1000个epoch ，学习时可以写小点
         # 循环所有的epoch   enumerate()获得当前迭代次数
         for i,data in enumerate(train_loader,0):#取出一个bath # 嵌套循环，每执行一次迭代，执行1个mini-batch
             # repare data  DataLoader直接将数据转换成tensor
