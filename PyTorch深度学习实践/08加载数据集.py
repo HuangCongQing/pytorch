@@ -4,7 +4,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-06 17:24:26
-LastEditTime: 2020-12-06 17:29:45
+LastEditTime: 2020-12-06 18:36:42
 FilePath: /pytorch/PyTorch深度学习实践/08加载数据集.py
 '''
 
@@ -22,17 +22,17 @@ __len__()帮助我们返回数据集大小
 '''
 class DiabetesDataset(Dataset):
     def __init__(self,filepath):
-        xy = np.loadtxt(filepath,delimiter=',',dtype=np.float32)
+        xy = np.loadtxt(filepath,delimiter=',',dtype=np.float32) # ,号作为分隔符
         #shape本身是一个二元组（x,y）对应数据集的行数和列数，这里[0]我们取行数,即样本数
-        self.len = xy.shape[0]
+        self.len = xy.shape[0] # 获取样本数
         self.x_data = torch.from_numpy(xy[:, :-1])
         self.y_data = torch.from_numpy(xy[:, [-1]])
 
     def __getitem__(self, index):
-        return self.x_data[index],self.y_data[index]
+        return self.x_data[index],self.y_data[index]  # （x,y） 元组
 
     def __len__(self):
-        return self.len
+        return self.len # 返回样本数
         
 #定义好DiabetesDataset后我们就可以实例化他了
 dataset = DiabetesDataset('./data/Diabetes_class.csv.gz')
@@ -63,10 +63,10 @@ optimizer = torch.optim.SGD(model.parameters(),lr=0.1)#lr为学习率
 
 if __name__=='__main__':#if这条语句在windows系统下一定要加，否则会报错
     for epoch in range(1000):
-        # 循环所有的epoch
-        for i,data in enumerate(train_loader,0):#取出一个bath # 嵌套循环，没执行一次迭代，执行1个mini-batch
-            # repare data
-            inputs,labels = data#将输入的数据赋给inputs，结果赋给labels 
+        # 循环所有的epoch   enumerate()获得当前迭代次数
+        for i,data in enumerate(train_loader,0):#取出一个bath # 嵌套循环，每执行一次迭代，执行1个mini-batch
+            # repare data  DataLoader直接将数据转换成tensor
+            inputs,labels = data#将输入的数据赋给inputs，结果赋给labels    
             #Forward
             y_pred = model(inputs)
             loss = criterion(y_pred,labels)
