@@ -8,7 +8,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-06 12:37:48
-LastEditTime: 2020-12-06 17:16:16
+LastEditTime: 2020-12-06 19:59:50
 FilePath: /pytorch/PyTorch深度学习实践/07处理多维特征的输入.py
 '''
 
@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt  # 画图
 # from sklearn import datasets  # 没用到
 
 #  prepare dataset
-xy=np.loadtxt('./data/Diabetes_class.csv.gz',delimiter=',',dtype=np.float32)#加载训练集合
+xy=np.loadtxt('./data/diabetes.csv.gz',delimiter=',',dtype=np.float32)#加载训练集合
 x_data = torch.from_numpy(xy[:,:-1])#取前八列  第二个‘:-1’是指从第一列开始，最后一列不要
 y_data = torch.from_numpy(xy[:,[-1]]) # [-1] 最后得到的是个矩阵
 
@@ -50,7 +50,7 @@ class Model(torch.nn.Module):
 model = Model()#实例化模型
 criterion = torch.nn.BCELoss(size_average=False)
 #model.parameters()会扫描module中的所有成员，如果成员中有相应权重，那么都会将结果加到要训练的参数集合上
-optimizer = torch.optim.SGD(model.parameters(),lr=0.1)#lr为学习率，因为0.01太小了，我改成了0.1
+optimizer = torch.optim.SGD(model.parameters(),lr=0.01)#lr为学习率
 
 
 epoch_list = [] # 用来画图
