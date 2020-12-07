@@ -1,10 +1,14 @@
 '''
 Description: 卷积层
+视频：https://www.bilibili.com/video/BV1Y7411d7Ys?p=10
+博客：
+https://blog.csdn.net/bit452/article/details/109690712
+https://blog.csdn.net/weixin_44841652/article/details/105243630
 Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-07 11:20:03
-LastEditTime: 2020-12-07 11:20:26
+LastEditTime: 2020-12-07 11:43:37
 FilePath: /pytorch/PyTorch深度学习实践/10.1卷积层.py
 '''
 
