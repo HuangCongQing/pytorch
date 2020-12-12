@@ -4,7 +4,7 @@ pytorch学习 （2020年秋）
 个人安装1.4版本
 `conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch`
 
-@[ChungKing](https://github.com/HuangCongQing/pytorch) , 若fork或star请注明来源
+@[双愚](https://github.com/HuangCongQing/pytorch) , 若fork或star请注明来源
 
 * 官网：https://pytorch.org/
 * 中文教程文档：https://pytorch.apachecn.org/
@@ -32,6 +32,6 @@ code：[PyTorch深度学习实践](PyTorch深度学习实践)
 
 ### License
 
-Copyright (c) [ChungKing](https://github.com/HuangCongQing/pytorch). All rights reserved.
+Copyright (c) [双愚](https://github.com/HuangCongQing/pytorch). All rights reserved.
 
 Licensed under the [MIT](./LICENSE) License.
