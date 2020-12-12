@@ -1,10 +1,14 @@
 '''
 Description: ResNet
+视频：https://www.bilibili.com/video/BV1Y7411d7Ys?p=11
+博客
+• https://blog.csdn.net/bit452/article/details/109693790
+•  https://blog.csdn.net/weixin_44841652/article/details/105256034
 Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-12 15:25:16
-LastEditTime: 2020-12-12 15:28:13
+LastEditTime: 2020-12-12 15:29:18
 FilePath: /pytorch/PyTorch深度学习实践/11.2AdvancedCNN-ResNet.py
 '''
 
@@ -50,7 +54,7 @@ class Net(nn.Module):
         self.rblock2 = ResidualBlock(32)
  
         self.mp = nn.MaxPool2d(2)
-        self.fc = nn.Linear(512, 10) # 512咋能自动出来的
+        self.fc = nn.Linear(512, 10) # 512咋能自动出来的  512 = channels*width*height 
  
  
     def forward(self, x):
