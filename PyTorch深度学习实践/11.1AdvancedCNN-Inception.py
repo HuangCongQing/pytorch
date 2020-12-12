@@ -8,9 +8,23 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-12 11:32:16
-LastEditTime: 2020-12-12 15:09:51
+LastEditTime: 2020-12-12 15:24:18
 FilePath: /pytorch/PyTorch深度学习实践/11.1AdvancedCNN-Inception.py
 '''
+""" 
+1408 = channels*width*height = 88*4*4
+
+
+width*height 4*4来源：
+原始照片size：28x*28
+nn.Conv2d(1, 10, kernel_size=5)（-4）：24*24
+ nn.Conv2d(88, 20, kernel_size=5)（-4） ：20*20
+第一次InceptionA（-8）：
+第二次InceptionA（-8）：4*4
+ """
+
+
+
 import torch
 import torch.nn as nn
 from torchvision import transforms
@@ -70,7 +84,7 @@ class Net(nn.Module):
         self.incep2 = InceptionA(in_channels=20) # 与conv2 中的20对应
  
         self.mp = nn.MaxPool2d(2)
-        self.fc = nn.Linear(1408, 10) # 暂时不知道1408咋能自动出来的
+        self.fc = nn.Linear(1408, 10) # 暂时不知道1408咋能自动出来的  1408 = channels*width*height = 88*4*4
  
  
     def forward(self, x):
