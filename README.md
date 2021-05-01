@@ -1,8 +1,9 @@
 # pytorch
 
 pytorch学习 （2020年秋）
-个人安装1.4版本
-`conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch`
+
+* Ubuntu18.04（公司）: **1.4.0**版本
+  `conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch`
 
 @[双愚](https://github.com/HuangCongQing/pytorch) , 若fork或star请注明来源
 
