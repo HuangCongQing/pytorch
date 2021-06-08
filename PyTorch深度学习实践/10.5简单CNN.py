@@ -8,7 +8,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-07 11:52:21
-LastEditTime: 2020-12-07 12:06:49
+LastEditTime: 2021-06-08 21:44:03
 FilePath: /pytorch/PyTorch深度学习实践/10.5简单CNN.py
 '''
 import torch
@@ -42,7 +42,7 @@ class Net(torch.nn.Module):
  
     def forward(self, x):
         # flatten data from (n,1,28,28) to (n, 784)
-        batch_size = x.size(0)  # 
+        batch_size = x.size(0)  # 0代表样本数量
         x = F.relu(self.pooling(self.conv1(x)))
         x = F.relu(self.pooling(self.conv2(x)))
         x = x.view(batch_size, -1) # -1 此处自动算出的是320
