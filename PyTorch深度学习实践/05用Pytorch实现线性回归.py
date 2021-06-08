@@ -6,7 +6,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-05 12:20:13
-LastEditTime: 2020-12-05 16:54:16
+LastEditTime: 2021-06-08 21:23:22
 FilePath: /pytorch/PyTorch深度学习实践/05用Pytorch实现线性回归.py
 '''
 
@@ -48,9 +48,10 @@ for epoch in range(100):
     y_pred = model(x_data) # forward:predict    等同于self.linear(x_data）
     loss = criterion(y_pred, y_data) # forward: loss
     print(epoch, loss.item())
+    # print(epoch, loss) # loss是个对象，Tensor格式
  
-    optimizer.zero_grad() # the grad computer by .backward() will be accumulated. so before backward, remember set the grad to zero
-    loss.backward() # backward: autograd
+    optimizer.zero_grad() # 梯度归零the grad computer by .backward() will be accumulated. so before backward, remember set the grad to zero
+    loss.backward() # 反向传播backward: autograd
     optimizer.step() # update 参数，即更新w和b的值
  
 print('w = ', model.linear.weight.item())
