@@ -1,5 +1,5 @@
 '''
-Description: CNN实现
+Description: CNN实现(手写数字10分类)
 视频：https://www.bilibili.com/video/BV1Y7411d7Ys?p=10
 博客：
 https://blog.csdn.net/bit452/article/details/109690712
@@ -8,8 +8,8 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2020-12-07 11:52:21
-LastEditTime: 2021-06-08 21:44:03
-FilePath: /pytorch/PyTorch深度学习实践/10.5简单CNN.py
+LastEditTime: 2021-06-09 20:59:08
+FilePath: /pytorch/PyTorch深度学习实践/10.5简单CNN(手写数字10分类).py
 '''
 import torch
 from torchvision import transforms
@@ -46,7 +46,7 @@ class Net(torch.nn.Module):
         x = F.relu(self.pooling(self.conv1(x)))
         x = F.relu(self.pooling(self.conv2(x)))
         x = x.view(batch_size, -1) # -1 此处自动算出的是320
-        x = self.fc(x)
+        x = self.fc(x) # 输出10
  
         return x
  
