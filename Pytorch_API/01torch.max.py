@@ -4,7 +4,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-06-16 16:19:46
-LastEditTime: 2021-06-16 16:22:00
+LastEditTime: 2021-06-16 16:23:47
 FilePath: /pytorch/Pytorch_API/01torch.max.py
 '''
 import torch
@@ -27,18 +27,23 @@ x:
         [0.9666, 0.2836, 0.8554, 0.1083],
         [0.8416, 0.2497, 0.9407, 0.0587],
         [0.4886, 0.0165, 0.4031, 0.0805]])
+
 torch.max(x,1):
  torch.return_types.max(
 values=tensor([0.9018, 0.9666, 0.9407, 0.4886]),
 indices=tensor([3, 0, 2, 0]))
+
 torch.max(x,0):
  torch.return_types.max(
 values=tensor([0.9666, 0.3753, 0.9407, 0.9018]),
 indices=tensor([1, 0, 2, 0]))
-torch.max(x,1)[0]:
+
+torch.max(x,1)[0]: # 数组
  tensor([0.9018, 0.9666, 0.9407, 0.4886])
-torch.max(x,1)[1]:
+
+torch.max(x,1)[1]: # 下标
  tensor([3, 0, 2, 0])
+ 
 torch.max(x,1)[1].data:
  tensor([3, 0, 2, 0])
 torch.max(x,1)[1].data.numpy():
