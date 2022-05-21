@@ -1,3 +1,12 @@
+<!--
+ * @Description: 
+ * @Author: HCQ
+ * @Company(School): UCAS
+ * @Email: 1756260160@qq.com
+ * @Date: 2022-05-22 00:01:07
+ * @LastEditTime: 2022-05-22 00:02:36
+ * @FilePath: /pytorch/README.md
+-->
 # pytorch
 
 pytorch学习 （2020年秋）
@@ -28,6 +37,13 @@ PPT：[PyTorch深度学习实践PPT](PyTorch深度学习实践PPT)
 code：[PyTorch深度学习实践](PyTorch深度学习实践)
 
 **视频：**<br />《PyTorch深度学习实践》完结合集<br />[https://www.bilibili.com/video/BV1Y7411d7Ys](https://www.bilibili.com/video/BV1Y7411d7Ys)
+
+
+### torch.nn深入
+
+* [torch.nn](torch.nn)
+
+https://www.yuque.com/huangzhongqing/pytorch/hwk1g7
 
 ### Issues
 
