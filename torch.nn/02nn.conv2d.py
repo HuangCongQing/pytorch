@@ -25,6 +25,7 @@ class Mymodule(nn.Module):
     def __init__(self):
         super(Mymodule, self).__init__()
         self.conv1 = Conv2d(in_channels=3, out_channels=6, kernel_size=3, stride=1, padding=0)
+        # torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True, padding_mode='zeros', device=None, dtype=None)
 
     def forward(self, x):
         x = self.conv1(x)
@@ -34,7 +35,7 @@ class Mymodule(nn.Module):
 mymodule = Mymodule()
 # print(mymodule) # 打印输出模型结构 (conv1): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1))
 
-writer = SummaryWriter("../logs")
+writer = SummaryWriter("../logs/conv2d")
 step=0
 for data in dataloader:
     img, target = data
