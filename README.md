@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2022-05-22 00:01:07
- * @LastEditTime: 2022-05-22 00:02:36
+ * @LastEditTime: 2022-05-22 16:46:51
  * @FilePath: /pytorch/README.md
 -->
 # pytorch
@@ -28,6 +28,26 @@ pytorch学习 （2020年秋）
 * 中文官网: [https://pytorch.apachecn.org/docs/1.4/](https://pytorch.apachecn.org/docs/1.4/)
 * code:[Official tutorial官方教程](Official tutorial官方教程)
 
+### 1 torch.nn深入
+
+
+https://www.yuque.com/huangzhongqing/pytorch/hwk1g7
+
+* [torch.nn](torch.nn)
+
+
+### 2 transform转换
+
+* [transform](transform)
+
+
+### 3 tensorboard
+* [Pytorch_API/tensorboard](Pytorch_API/tensorboard)
+
+
+### 4 常见网络模型
+* [module](module)
+
 ### 【bilibili】PyTorch深度学习实践
 
 视频：https://www.bilibili.com/video/BV1Y7411d7Ys
@@ -39,11 +59,8 @@ code：[PyTorch深度学习实践](PyTorch深度学习实践)
 **视频：**<br />《PyTorch深度学习实践》完结合集<br />[https://www.bilibili.com/video/BV1Y7411d7Ys](https://www.bilibili.com/video/BV1Y7411d7Ys)
 
 
-### torch.nn深入
 
-* [torch.nn](torch.nn)
 
-https://www.yuque.com/huangzhongqing/pytorch/hwk1g7
 
 ### Issues
 
