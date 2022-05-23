@@ -1,5 +1,5 @@
 """
-@Description: 优化器
+@Description: 优化器 不是nn里的模块，而是torch.torch.optim.SGD(mymodule.parameters(), lr=0.01) 
 @Author   : HCQ
 @Contact_1: 1756260160@qq.com
 @Project  : pytorch
