@@ -117,7 +117,7 @@ for i in range(epoch):
             output = mymodule(imgs)
             loss = loss_fn(output, target)
             total_test_loss +=loss.item()
-            accuracy = (output.argmax()==target).sum()
+            accuracy = (output.argmax(1)==target).sum()
             total_test_accuracy +=accuracy.item()
         print("整体测试集loss: %f"%(total_test_loss))
         print("整体测试集正确率：%f"%(total_test_accuracy/len(test_data)))
