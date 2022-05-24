@@ -42,7 +42,7 @@ https://www.yuque.com/huangzhongqing/pytorch/hwk1g7
 
 
 ### 3 tensorboard
-* [Pytorch_API/tensorboard](Pytorch_API/tensorboard)
+* [Pytorch_API/tensorboard](tensorboard)
 
 
 ### 4 常见网络模型
