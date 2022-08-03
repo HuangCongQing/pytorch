@@ -16,7 +16,7 @@ from torch import nn
 from torch.nn import Conv2d, MaxPool2d, Flatten, Linear, Sequential
 from torch.utils.tensorboard import SummaryWriter
 
-
+# 流程示意图：https://www.yuque.com/huangzhongqing/pytorch/hwk1g7#ObngJ
 class Mymodule(nn.Module):
     def __init__(self):
         super(Mymodule, self).__init__()
