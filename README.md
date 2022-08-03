@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2022-05-22 00:01:07
- * @LastEditTime: 2022-05-22 16:46:51
+ * @LastEditTime: 2022-08-03 10:42:25
  * @FilePath: /pytorch/README.md
 -->
 # pytorch
@@ -34,6 +34,7 @@ pytorch学习 （2020年秋）
 https://www.yuque.com/huangzhongqing/pytorch/hwk1g7
 
 * [torch.nn](torch.nn)
+  * 理解神经网络输入输出[torch.nn/06nn.Sequential_CIFATR10_cls](torch.nn/06nn.Sequential_CIFATR10_cls.py)
 
 
 ### 2 transform转换
