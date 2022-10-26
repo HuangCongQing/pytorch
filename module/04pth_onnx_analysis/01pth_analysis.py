@@ -38,6 +38,12 @@ for k, v in init_net['model'].items():
     if k.startswith('module.voxel_down1.layer0.conv'):
         print(k, v.shape)  # 查看四个键，分别是 model,optimizer,scheduler,iteration
         # print(v)
+
+    # 修改权重的数值>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    if k == 'module.voxel_down1.layer0.conv.kernel':
+        refine_kernel = torch.ones((8,32,32))
+        init_net['model']['module.voxel_down1.layer0.conv.kernel'] = refine_kernel
+
 # module.voxel_down1.layer0.conv.kernel torch.Size([8, 32, 32])
 # module.voxel_down1.layer0.conv.bn_weight torch.Size([32])
 # module.voxel_down1.layer0.conv.bn_bias torch.Size([32])
