@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Email: 1756260160@qq.com
  * @Date: 2022-05-22 00:01:07
- * @LastEditTime: 2022-08-03 10:42:25
+ * @LastEditTime: 2023-03-23 14:52:42
  * @FilePath: /pytorch/README.md
 -->
 # pytorch
@@ -47,7 +47,12 @@ https://www.yuque.com/huangzhongqing/pytorch/hwk1g7
 
 
 ### 4 常见网络模型
-* [module](module)
+* [module](./module)
+
+
+### 自定义OP转onnx
+
+* [onnx](./onnx)
 
 ### 【bilibili】PyTorch深度学习实践
 
